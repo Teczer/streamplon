@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXO - Simplonline</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6c27cb507.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hero-container" id="hero-container">
+      <div class="hero">
+        <div class="homelink">
+          <a href="#">STREAMPLON</a>
+        </div>
+        <header>
+          <ul>
+            <li>
+              <a href="#">Séries</a>
+            </li>
+            <li>
+              <a href="#">Films</a>
+            </li>
+            <li>
+              <a href="#">Manga</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+          </ul>
+          <div class="search">
+            <img
+              id="loupe"
+              class="icon"
+              src="/assets/icons/search.svg"
+              alt="search"
+            />
+            <input id="search" type="text" placeholder="         . . ." />
+          </div>
+          <div class="actions">
+            <div class="notification">
+              <img
+                class="icon"
+                src="/assets/icons/notification.svg"
+                alt="notification"
+              />
+            </div>
+            <div class="user">
+              <a href="#">
+                <img class="icon" src="/assets/icons/user.svg" alt="user" />
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="chevrons">
+        <div role="button" onclick="goToPreviousImg()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div role="button" onclick="goToNextImg()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row-container ma-liste">
+      <div class="row-children">
+        <h1>Ma liste</h1>
+        <ul>
+          <li
+            onmouseenter="showMovieDescription('movie-description-1')"
+            onmouseleave="hideMovieDescription('movie-description-1')"
+          >
+            <img src="/assets/img/add-movie.svg" alt="add" />
+            <div class="description" id="movie-description-1">
+              <div class="quadicon">
+                <div class="tripleicon">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+              </div>
+              <div class="fulldesc">
+                <div class="categorie">
+                  <h1>NOM DU FILM</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div class="duree">
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-2')"
+            onmouseleave="hideMovieDescription('movie-description-2')"
+          >
+            <img src="/assets/img/add-movie.svg" alt="add" />
+            <div class="description" id="movie-description-2">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-3')"
+            onmouseleave="hideMovieDescription('movie-description-3')"
+          >
+            <img src="/assets/img/add-movie.svg" alt="add" />
+            <div class="description" id="movie-description-3">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-4')"
+            onmouseleave="hideMovieDescription('movie-description-4')"
+          >
+            <img src="/assets/img/add-movie.svg" alt="add" />
+            <div class="description" id="movie-description-4">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Films -->
+    <div class="row-container films">
+      <div class="row-children">
+        <h1>Films</h1>
+        <ul>
+          <li
+            onmouseenter="showMovieDescription('movie-description-5')"
+            onmouseleave="hideMovieDescription('movie-description-5')"
+          >
+            <img src="/assets/img/evades.webp" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-5">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-6')"
+            onmouseleave="hideMovieDescription('movie-description-6')"
+          >
+            <img src="/assets/img/truman.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-6">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-7')"
+            onmouseleave="hideMovieDescription('movie-description-7')"
+          >
+            <img src="/assets/img/nekfeu.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-7">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-8')"
+            onmouseleave="hideMovieDescription('movie-description-8')"
+          >
+            <img src="/assets/img/titanic.jpg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-8">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- TOP 3 -->
+    <div class="row-container top3">
+      <div class="row-children">
+        <h1>TOP 3</h1>
+
+        <ul>
+          <li>
+            <span class="number">01</span>
+            <img src="/assets/img/naruto.jpeg" alt="Movie: [nom du film]" />
+          </li>
+          <li>
+            <span class="number">02</span>
+            <img
+              src="/assets/img/walkingdead.jpeg"
+              alt="Movie: [nom du film]"
+            />
+          </li>
+          <li>
+            <span class="number">03</span>
+            <img src="/assets/img/asterix.jpeg" alt="Movie: [nom du film]" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Serie -->
+    <div class="row-container serie">
+      <div class="row-children">
+        <h1>Serie</h1>
+        <ul>
+          <li
+            onmouseenter="showMovieDescription('movie-description-9')"
+            onmouseleave="hideMovieDescription('movie-description-9')"
+          >
+            <img src="/assets/img/alice.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-9">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-10')"
+            onmouseleave="hideMovieDescription('movie-description-10')"
+          >
+            <img src="/assets/img/got.jpg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-10">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-11')"
+            onmouseleave="hideMovieDescription('movie-description-11')"
+          >
+            <img
+              src="/assets/img/breakingbad.jpeg"
+              alt="Movie: [nom du film]"
+            />
+            <div class="description" id="movie-description-11">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-12')"
+            onmouseleave="hideMovieDescription('movie-description-12')"
+          >
+            <img src="/assets/img/hotd.webp" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-12">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Manga -->
+    <div class="row-container manga">
+      <div class="row-children">
+        <h1>Manga</h1>
+        <ul>
+          <li
+            onmouseenter="showMovieDescription('movie-description-13')"
+            onmouseleave="hideMovieDescription('movie-description-13')"
+          >
+            <img src="/assets/img/dbs.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-13">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-14')"
+            onmouseleave="hideMovieDescription('movie-description-14')"
+          >
+            <img src="/assets/img/sousei.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-14">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-15')"
+            onmouseleave="hideMovieDescription('movie-description-15')"
+          >
+            <img src="/assets/img/reborn.jpeg" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-15">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+          <li
+            onmouseenter="showMovieDescription('movie-description-16')"
+            onmouseleave="hideMovieDescription('movie-description-16')"
+          >
+            <img src="/assets/img/deathnote.webp" alt="Movie: [nom du film]" />
+            <div class="description" id="movie-description-16">
+              <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+              </div>
+
+              <div>
+                <div>
+                  <h1>Nom du film</h1>
+                  <h2>Recommandé 98%</h2>
+                  <h2>Exaltant - Action - Fantaisie</h2>
+                </div>
+
+                <div>
+                  <p>16+</p>
+                  <p>2h59min</p>
+                  <p>HD</p>
+                </div>
+              </div>
+              >>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- newsletter -->
+    <div class="newsletter">
+      <div class="newsletter-children">
+        <div class="title-and-description">
+          <div class="title">
+            <div class="title-content">
+              <h1>News</h1>
+              <p>
+                _ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+                __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+                __ __ __ __ __ __ __ __ _
+              </p>
+            </div>
+          </div>
+          <div class="news-description">
+            <img src="/assets/img/walkingdead.jpeg" alt="newsimage" />
+            <div class="image-description">
+              <h2>Rick & Morties</h2>
+              <h3>Qui sont vraiment rick & morties</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+                aut qui fugiat ut explicabo sint, nemo commodi, esse aperiam
+                quas harum adipisci neque! Possimus recusandae debitis doloribus
+                praesentium earum modi, dolorum molestias officiis placeat minus
+                laborum provident nulla sunt voluptas dolores nemo voluptate non
+                qui esse sit, asperiores fugit? Ratione?
+              </p>
+              <div class="next">
+                <a href="#">Lire la suite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="articles">
+          <div class="articles-description">
+            <h2>Articles</h2>
+            <p>récents 2022</p>
+          </div>
+          <ul>
+            <li><img src="/assets/img/add-movie.svg" alt="add" /></li>
+          </ul>
+          <ul>
+            <li><img src="/assets/img/add-movie.svg" alt="add" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-foot">
+        <div class="footer-elem1">
+          <ul>
+            <li>Films</li>
+            <li>Série</li>
+            <li>Mangas</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="footer-elem2">
+          <p>Contact</p>
+          <div class="inscription-news">
+            <input
+              type="text"
+              name="inscription"
+              id=""
+              placeholder="Inscription Newsletter"
+            />
+            <button>Envoyer</button>
+          </div>
+        </div>
+        <div class="footer-elem3">
+          <ul>
+            <li>CGU</li>
+            <li>Mention légale</li>
+            <li>F.A.Q</li>
+          </ul>
+        </div>
+        <div class="footer-elem4">
+          <a href="#">
+            <p>Rejoignez-nous</p>
+          </a>
+          <div class="socials-icon">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="/assets/icons/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/icons/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/icons/tiktok.svg" alt="tiktok" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/carousel.js" defer></script>
+  <script src="/js/animations.js" defer></script>
+</html>

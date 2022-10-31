@@ -1,0 +1,13 @@
+:root {
+  /* Font Family */
+  --font-family-fjalla: "Fjalla One", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+  /* Colors */
+  --titanium-yellow: #f2e205ff;
+  --orange-yellow: #f2bc05ff;
+  --marigold: #f2a007ff;
+  --cultured: #f2f2f2ff;
+  --rich-black-fogra-39: #0d0d0dff;
+}
+
+/*# sourceMappingURL=variables.css.map */
