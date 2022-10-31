@@ -136,7 +136,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 400px 0px;
+  padding: 70px 0px;
 }
 .row-container .row-children {
   width: 1400px;
@@ -163,7 +163,7 @@ a {
   width: 100%;
   z-index: 100;
   border-radius: 0px 0px 8px 8px;
-  border: 2px solid red;
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
 }
