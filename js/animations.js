@@ -16,10 +16,12 @@ loupe.addEventListener("click", function () {
 
 function showMovieDescription(movieDescriptionId) {
   const movieDescription = document.getElementById(movieDescriptionId);
-  movieDescription.style.height = "300px";
+  movieDescription.style.height = "200px";
+  movieDescription.parentElement.style.zIndex = "1";
 }
 
 function hideMovieDescription(movieDescriptionId) {
   const movieDescription = document.getElementById(movieDescriptionId);
   movieDescription.style.height = "11px";
+  movieDescription.parentElement.style.zIndex = "0";
 }

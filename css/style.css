@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,10 +26,6 @@ body {
   font-size: 1.6rem;
 }
 
-p {
-  margin: 1rem 0;
-}
-
 h1,
 h2,
 h3,
@@ -26,7 +33,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-fjalla);
-  margin: 1rem 0 2rem 0;
 }
 
 ul {
@@ -136,7 +142,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 70px 0px;
+  padding: 70px 0px; /* 70px 0px */
 }
 .row-container .row-children {
   width: 1400px;
@@ -163,14 +169,14 @@ a {
   width: 100%;
   z-index: 100;
   border-radius: 0px 0px 8px 8px;
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
 }
 .row-container ul li .description .fulldesc {
   display: flex;
-  border: 2px solid purple;
   flex-direction: row;
+  margin-top: 20px;
   padding: 0 15px;
 }
 .row-container ul li .description .fulldesc .categorie {
@@ -178,19 +184,48 @@ a {
   flex-direction: column;
 }
 .row-container ul li .description .fulldesc .categorie h1 {
-  font-size: 28px;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #252525;
+}
+.row-container ul li .description .fulldesc .categorie h2 {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.row-container ul li .description .fulldesc .categorie h3 {
+  font-size: 12px;
+  margin-right: 3px;
 }
 .row-container ul li .description .fulldesc .duree {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   flex-direction: row;
+}
+.row-container ul li .description .fulldesc .duree h3 {
+  font-family: var(--font-family-inter);
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  margin: 0 2px 0 20px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.row-container ul li .description .fulldesc .duree h4 {
+  font-family: var(--font-family-inter);
+  height: 20px;
+  margin: 0 4px;
+  font-size: 12px;
+  border: 1px solid black;
+  text-align: center;
+}
+.row-container ul li .description .fulldesc .duree p {
+  font-size: 9px;
 }
 .row-container ul li .description .quadicon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid blue;
   margin-top: 20px;
   padding: 0 10px;
 }
