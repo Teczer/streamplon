@@ -3,7 +3,7 @@ let loupe = document.getElementById("loupe");
 
 let swapinput = true;
 
-loupe.addEventListener("click", function () {
+function animateSearchInput() {
   if (swapinput == false) {
     inputsearch.style.width = "0px";
     swapinput = true;
@@ -11,8 +11,7 @@ loupe.addEventListener("click", function () {
     inputsearch.style.width = "150px";
     swapinput = false;
   }
-  console.log("yo");
-});
+}
 
 function showMovieDescription(movieDescriptionId) {
   const movieDescription = document.getElementById(movieDescriptionId);

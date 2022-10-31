@@ -122,6 +122,9 @@ a {
   display: flex;
   gap: 14px;
 }
+.hero-container .hero header .actions .notification-icon:hover {
+  transform: rotate(20deg);
+}
 .hero-container .chevrons {
   display: flex;
   align-items: center;
@@ -131,9 +134,13 @@ a {
   padding: 0px 40px;
 }
 .hero-container .chevrons i {
-  font-size: 70px;
+  font-size: 34px;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
+}
+.hero-container .chevrons i:hover {
+  font-size: 70px;
 }
 
 /* row-container */

@@ -85,6 +85,12 @@
       .actions {
         display: flex;
         gap: 14px;
+
+        .notification-icon {
+          &:hover {
+            transform: rotate(20deg);
+          }
+        }
       }
     }
   }
@@ -98,9 +104,14 @@
     padding: 0px 40px;
 
     i {
-      font-size: 70px;
+      font-size: 34px;
       color: white;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        font-size: 70px;
+      }
     }
   }
 }
@@ -138,7 +149,6 @@
       .description {
         background-color: #f5f3f3;
         height: 11px;
-        // height: 200px;
         overflow: hidden;
         width: 100%;
         z-index: 100;
