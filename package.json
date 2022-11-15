@@ -1,7 +1,7 @@
 {
   "name": "exosimplonline",
   "version": "1.0.0",
-  "description": "",
+  "description": "Voici l'exercice Streamplon",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss:css"
@@ -11,5 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.55.0"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teczer/streamplon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Teczer/streamplon/issues"
+  },
+  "homepage": "https://github.com/Teczer/streamplon#readme"
 }

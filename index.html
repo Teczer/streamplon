@@ -324,16 +324,23 @@
         <h1>TOP 3</h1>
 
         <ul>
-          <li>
+          <li
+            onmouseenter="startVideo('video-01')"
+            onmouseleave="stopVideo('video-01')"
+          >
             <span class="number">01</span>
-            <img src="/assets/img/naruto.jpeg" alt="Movie: [nom du film]" />
+            <video id="video-01" muted>
+              <source src="/assets/video/naruto.mp4" type="video/mp4" />
+            </video>
           </li>
-          <li>
+          <li
+            onmouseenter="startVideo('video-02')"
+            onmouseleave="stopVideo('video-02')"
+          >
             <span class="number">02</span>
-            <img
-              src="/assets/img/walkingdead.jpeg"
-              alt="Movie: [nom du film]"
-            />
+            <video id="video-02" muted>
+              <source src="/assets/video/fight-club.mp4" type="video/mp4" />
+            </video>
           </li>
           <li>
             <span class="number">03</span>
@@ -698,4 +705,5 @@
   </body>
   <script src="/js/carousel.js" defer></script>
   <script src="/js/animations.js" defer></script>
+  <script src="/js/videos.js" defer></script>
 </html>

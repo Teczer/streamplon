@@ -2,6 +2,7 @@
 @import "reset";
 @import "base";
 @import "utils";
+@import "media-queries";
 
 /* Hero section */
 .hero-container {
@@ -129,9 +130,17 @@
 
   .row-children {
     width: 1400px;
+
+    @include xs {
+      display: flex;
+      flex-direction: column;
+    }
   }
   ul {
     display: flex;
+    @include xs {
+      flex-direction: column;
+    }
     justify-content: space-between;
     gap: 41px;
 
@@ -258,6 +267,11 @@
         opacity: 0.8;
         font-size: 128px;
         font-family: var(--font-family-fjalla);
+      }
+
+      video {
+        max-width: 250px;
+        height: auto;
       }
 
       img {

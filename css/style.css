@@ -48,7 +48,13 @@ a {
 .icon {
   height: 51px;
   width: 51px;
-} /* Hero section */
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+/* Hero section */
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -154,10 +160,21 @@ a {
 .row-container .row-children {
   width: 1400px;
 }
+@media (max-width: 480px) {
+  .row-container .row-children {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .row-container ul {
   display: flex;
   justify-content: space-between;
   gap: 41px;
+}
+@media (max-width: 480px) {
+  .row-container ul {
+    flex-direction: column;
+  }
 }
 .row-container ul li {
   width: 300px;
@@ -268,6 +285,10 @@ a {
   opacity: 0.8;
   font-size: 128px;
   font-family: var(--font-family-fjalla);
+}
+.top3 ul li video {
+  max-width: 250px;
+  height: auto;
 }
 .top3 ul li img {
   width: 250px;
